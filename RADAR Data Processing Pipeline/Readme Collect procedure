@@ -1,0 +1,8 @@
+1. Set up radar
+2. Open mmwave studio, press run (path\to\DataCaptureDemo_1843new.lua). If not working, reopen.
+3. Now the radar should be collecting data
+4. python capture.py 1 (record for 1 minute)
+5. Change the bin. file name in names.sync
+6. python read_raw_data.py (will read bin. file and create .npy in test_data_00, if dir. not exist, create one manually)
+7. python process_raw_data.py (change begin, end of frame, about 30 frames can be process at a time, more will cause problem)
+8. process_raw_data will also convert to velocity-time plot. If range-angle plot is needed, change channel_doppler to channel_angle
